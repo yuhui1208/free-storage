@@ -41,7 +41,7 @@ export async function parseTwitterByLink(twitterLink: string): Promise<TweetPars
                     if (t.status) {
                         return {
                             status: true,
-                            user: t.result,
+                            user: userInfo.result,
                             address: t.address,
                             code: t.code
                         }
